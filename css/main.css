@@ -203,10 +203,10 @@ input {
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
     #userInterface {
         width: 100%;
-        min-width: 0px;
+        min-width: 0;
     }
 
     .container {
