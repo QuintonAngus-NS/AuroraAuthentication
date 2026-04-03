@@ -48,6 +48,9 @@ if (type === 'login') {
     const requestID = new URLSearchParams(window.location.search).get('requestID')
     displayInterface(passwordResetScreen_Passwords)
     displayHeader('Account Security', 'Remember to never share or reuse passwords, and to always use strong passwords.')
+} else {
+    displayInterface(loginScreen)
+    displayHeader('Welcome Back!', 'Login to aurora to continue, and bring clarity to your library management.')
 }
 
 // Error Handling
@@ -119,8 +122,14 @@ signUpPasswordsContinueBtn.addEventListener('click', () => {
 // login / Sign-Up Links
 
 const SignUpLink = document.getElementById('signUpLink')
+const loginLink = document.getElementById('loginLink')
 
 SignUpLink.addEventListener('click', () => {
     window.location.href = 'https://auth.aurora.northern-star.online?type=signup'
 })
+
+loginLink.addEventListener('click', () => {
+    window.location.href = 'https://auth.aurora.northern-star.online?type=login'
+})
+
 
