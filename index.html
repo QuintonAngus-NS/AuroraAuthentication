@@ -27,23 +27,111 @@
                     <div class="inputHeader">Password</div>
                     <input type="password" placeholder="" id="loginPasswordInput">
                     <div class="errorWrapper">
-                        <div class="error" id="loginError"><span class="material-symbols-outlined errorIcon">warning</span>some error</div>
+                        <div class="error" id="loginError"></div>
                         <div class="altText">Forgot Password?</div>
                     </div>
                 </div>
-                <div class="btnText">< Login</div>
+                <div class="btnText" id="loginBtn">< Login</div>
                 <div class="dividerWrapper">
                     <div class="divider"></div>
                     <div class="dividerHeader">Continue With</div>
                     <div class="divider"></div>
                 </div>
                 <div class="servicesWrapper">
-                    <img src="./Resources/GoogleIcon.svg" class="serviceIcon">
-                    <img src="./Resources/AppleIconBlack.svg" class="serviceIcon appleIcon">
-                    <img src="./Resources/MicrosoftIcon.svg" class="serviceIcon">
+                    <img src="./Resources/GoogleIcon.svg" class="serviceIcon" id="googleLoginBtn">
+                    <img src="./Resources/AppleIconBlack.svg" class="serviceIcon appleIcon" id="appleLoginBtn">
+                    <img src="./Resources/MicrosoftIcon.svg" class="serviceIcon" id="microsoftLoginBtn">
                 </div>
-                <div class="signUpLinkText">Don't have an account? Sign-Up</div>
+                <div class="signUpLinkText" id="signUpLink">Don't have an account? Sign-Up</div>
+            </div>
+            <div id="signUpContainer1" class="container">
+                <img src="./Resources/Arora Logo.png" class="auroraLogo">
+                <div class="title">Sign-Up</div>
+                <div class="inputWrapper">
+                    <div class="inputHeader">Email</div>
+                    <input type="text" placeholder="" id="signUpEmailInput">
+                    <div class="errorWrapper">
+                        <div class="error" id="signUp1Error"></div>
+                    </div>
+                </div>
+                <div class="btnText" id="signUp1ContinueBtn">< Continue</div>
+                <div class="dividerWrapper">
+                    <div class="divider"></div>
+                    <div class="dividerHeader">Sign-Up With</div>
+                    <div class="divider"></div>
+                </div>
+                
+                <div class="servicesWrapper">
+                    <img src="./Resources/GoogleIcon.svg" class="serviceIcon" id="googleSignUpBtn">
+                    <img src="./Resources/AppleIconBlack.svg" class="serviceIcon appleIcon" id="appleSignUpBtn">
+                    <img src="./Resources/MicrosoftIcon.svg" class="serviceIcon" id="microsoftSignUpBtn">
+                </div>
+                <div class="signUpLinkText">Already have an account? Login</div>
+            </div>
+            <div id="signUpContainer2" class="container">
+                <img src="./Resources/Arora Logo.png" class="auroraLogo">
+                <div class="title">Sign-Up</div>
+                <div class="inputWrapper">
+                    <div class="inputHeader">Password</div>
+                    <input type="password" placeholder="" id="signUpPasswordInput">
+                </div>
+                <div class="inputWrapper">
+                    <div class="inputHeader">Confirm Password</div>
+                    <input type="password" placeholder="" id="signUpPasswordConfirmInput">
+                    <div class="errorWrapper">
+                        <div class="error" id="signUpPasswordError"></div>
+                    </div>
+                </div>
+                <div class="btnText" id="signUp2ContinueBtn">< Continue</div>
+                <div class="dividerSolid"></div>
+            </div>
+            <div id="signUpVerifyContainer">
+                <img src="./Resources/Arora Logo.png" class="auroraLogo">
+                <div class="title">Sign-Up</div>
+                <div class="inputWrapper">
+                    <div class="inputHeader">Code</div>
+                    <input type="text" placeholder="" id="signUpCodeInput">
+                    <div class="errorWrapper">
+                        <div class="error" id="signUpCodeError"><span class="material-symbols-outlined errorIcon">warning</span></div>
+                        <div class="altText">Resend Code</div>
+                    </div>
+                </div>
+                <div class="btnText" id="signUpVerifyAccountBtn">< Verify Account</div>
+                <div class="dividerSolid"></div>
+            </div>
+            <div id="resetPassword1Container">
+                <img src="./Resources/Arora Logo.png" class="auroraLogo">
+                <div class="title">Password Reset</div>
+                <div class="inputWrapper">
+                    <div class="inputHeader">Email</div>
+                    <input type="text" placeholder="" id="PasswordResetEmailInput">
+                    <div class="errorWrapper">
+                        <div class="error" id="passwordResetEmailError"><span class="material-symbols-outlined errorIcon">warning</span></div>
+                    </div>
+                </div>
+                <div class="btnText" id="signUpVerifyAccountBtn">< Send Reset Email</div>
+                <div class="dividerSolid"></div>
+            </div>
+            <div id="resetPassword2Container">
+                <img src="./Resources/Arora Logo.png" class="auroraLogo">
+                <div class="title">Password Reset</div>
+                <div class="inputWrapper">
+                    <div class="inputHeader">New Password</div>
+                    <input type="text" placeholder="" id="PasswordResetNewPasswordInput">
+                </div>
+                <div class="inputWrapper">
+                    <div class="inputHeader">Confirm New Password</div>
+                    <input type="text" placeholder="" id="PasswordResetEmailInput">
+                    <div class="errorWrapper">
+                        <div class="error" id="passwordResetPasswordError"><span class="material-symbols-outlined errorIcon">warning</span></div>
+                    </div>
+                </div>
+                <div class="btnText" id="signUpVerifyAccountBtn">< Reset Password</div>
+                <div class="dividerSolid"></div>
             </div>
         </div>
+
+        <script src="./scripts/script.js"></script>
+
     </body>
 </html>

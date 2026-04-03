@@ -86,15 +86,57 @@ body {
     padding-top: 50px;
     display: flex;
     justify-content: center;
-    min-width: 600px;
+    max-width: 500px;
+    min-width: 500px;
+
 }
 
 #loginContainer {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     width: 80%;
+}
+
+#signUpContainer1 {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 80%;
+}
+
+#signUpContainer2 {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 80%;    
+}
+
+#signUpVerifyContainer {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 80%; 
+}
+
+#resetPassword1Container {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 80%;    
+}
+
+#resetPassword2Container {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 80%;    
 }
 
 .auroraLogo {
@@ -108,7 +150,7 @@ body {
     font-weight: 600;
     padding-bottom: 10px;
     border-bottom: var(--primary) 1px solid;
-    width: 40%;
+    width: 80%;
     margin-bottom: 5rem;
 }
 
@@ -144,12 +186,19 @@ input {
   height: 100%;
 }
 
+
+
 .btnText {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-top: 4rem;
     color: var(--primary);
     margin-bottom: 4rem;
     cursor: pointer;
+    font-weight: 400;
+}
+
+.btnText:hover {
+    font-weight: 500;
 }
 
 .dividerWrapper {
@@ -254,8 +303,28 @@ input {
     display: none;
 }
 
+#signUpError {
+    color: var(--red);
+    font-size: 1.2rem;
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.error {
+    color: var(--red);
+}
+
 .errorIcon {
     color: var(--red);
     font-size: 1.2rem;
     margin-right: 0.5rem;
+    display: flex;
+}
+
+.dividerSolid {
+    width: 100%;
+    border-bottom: 1px solid var(--primary);
 }
